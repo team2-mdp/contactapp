@@ -20,7 +20,7 @@ class ContactDetailViewController: UIViewController {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        fatalError("")
     }
     
     override func viewDidLoad() {
@@ -56,7 +56,7 @@ class ContactDetailViewController: UIViewController {
 }
 
 //MARK: actions
-private extension ContactDetailViewController {
+extension ContactDetailViewController {
     @objc func changeProfile() {
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
@@ -79,7 +79,7 @@ private extension ContactDetailViewController {
 //MARK: tableview datasource
 extension ContactDetailViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        4
+        return 4
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
