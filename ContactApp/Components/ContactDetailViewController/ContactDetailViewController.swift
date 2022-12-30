@@ -11,7 +11,7 @@ import UIKit
 class ContactDetailViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     private var viewModel: ContactDetailViewControllerViewModelProtocol!
-    private var editButton: UIBarButtonItem!
+    private var updateButton: UIBarButtonItem!
     private var headerView: HeaderView!
     
     init(viewModel: ContactDetailViewControllerViewModelProtocol) {
@@ -48,10 +48,10 @@ class ContactDetailViewController: UIViewController {
         
         tableView.tableHeaderView = headerView
         
-        editButton = editButtonItem
-        editButton.tintColor = .systemBlue
-        editButton.action = #selector(edit)
-        navigationItem.rightBarButtonItem = editButton
+        updateButton = editButtonItem
+        updateButton.tintColor = .systemBlue
+        updateButton.action = #selector(edit)
+        navigationItem.rightBarButtonItem = updateButton
     }
 }
 
@@ -94,6 +94,16 @@ extension ContactDetailViewController: UITableViewDataSource {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
 //MARK: uiimagepicker delegate & datasource
 extension ContactDetailViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -103,6 +113,7 @@ extension ContactDetailViewController: UIImagePickerControllerDelegate & UINavig
         }
         
         picker.dismiss(animated: true)
+        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
