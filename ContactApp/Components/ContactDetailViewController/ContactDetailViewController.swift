@@ -56,7 +56,7 @@ class ContactDetailViewController: UIViewController {
 }
 
 //MARK: actions
-private extension ContactDetailViewController {
+extension ContactDetailViewController {
     @objc func changeProfile() {
         let pickerController = UIImagePickerController()
         pickerController.delegate = self
