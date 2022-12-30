@@ -94,6 +94,16 @@ extension ContactDetailViewController: UITableViewDataSource {
     }
 }
 
+
+
+
+
+
+
+
+
+
+
 //MARK: uiimagepicker delegate & datasource
 extension ContactDetailViewController: UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -103,6 +113,7 @@ extension ContactDetailViewController: UIImagePickerControllerDelegate & UINavig
         }
         
         picker.dismiss(animated: true)
+        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
