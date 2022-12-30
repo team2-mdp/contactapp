@@ -62,7 +62,7 @@ private extension AddViewController {
         gesture.numberOfTapsRequired = 1
         view.addGestureRecognizer(gesture)
         
-        fullnameTf.textField.placeholder = "Full name"
+        fullnameTf.textField.placeholder = "Fullname"
         fullnameTf.textField.text = viewModel.contact?.fullname
         
         mobileTf.textField.placeholder = "Mobile"
