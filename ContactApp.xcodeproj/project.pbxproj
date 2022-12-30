@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		5317E056293DB0B500A32902 /* ContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5317E055293DB0B500A32902 /* ContactTableViewCell.swift */; };
 		5317E058293DB0D700A32902 /* ContactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5317E057293DB0D700A32902 /* ContactTableViewCell.xib */; };
-		531AB18E29402021008C345D /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AB18C29402021008C345D /* AddViewController.swift */; };
-		531AB18F29402021008C345D /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 531AB18D29402021008C345D /* AddViewController.xib */; };
 		531AB1942940244E008C345D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AB1932940244E008C345D /* HeaderView.swift */; };
 		531AB1962940329E008C345D /* HeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AB1952940329E008C345D /* HeaderViewModel.swift */; };
 		531AB19A29404B12008C345D /* ContactDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531AB19829404B12008C345D /* ContactDetailTableViewCell.swift */; };
 		531AB19B29404B12008C345D /* ContactDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 531AB19929404B12008C345D /* ContactDetailTableViewCell.xib */; };
+		531C4FD7295F77C50046CD66 /* AddViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 531C4FD5295F77C50046CD66 /* AddViewController.xib */; };
+		531C4FD8295F77C50046CD66 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531C4FD6295F77C50046CD66 /* AddViewController.swift */; };
 		532880CD293FD695008EF20A /* ContactTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532880CC293FD695008EF20A /* ContactTableViewCellViewModel.swift */; };
 		532CE525293D8FAA003E4ABC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CE524293D8FAA003E4ABC /* AppDelegate.swift */; };
 		532CE527293D8FAA003E4ABC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532CE526293D8FAA003E4ABC /* SceneDelegate.swift */; };
@@ -38,12 +38,12 @@
 /* Begin PBXFileReference section */
 		5317E055293DB0B500A32902 /* ContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCell.swift; sourceTree = "<group>"; };
 		5317E057293DB0D700A32902 /* ContactTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactTableViewCell.xib; sourceTree = "<group>"; };
-		531AB18C29402021008C345D /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddViewController.swift; path = ../../../../../../Desktop/AddViewController.swift; sourceTree = "<group>"; };
-		531AB18D29402021008C345D /* AddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AddViewController.xib; path = ../../../../../../Desktop/AddViewController.xib; sourceTree = "<group>"; };
 		531AB1932940244E008C345D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		531AB1952940329E008C345D /* HeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewModel.swift; sourceTree = "<group>"; };
 		531AB19829404B12008C345D /* ContactDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailTableViewCell.swift; sourceTree = "<group>"; };
 		531AB19929404B12008C345D /* ContactDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactDetailTableViewCell.xib; sourceTree = "<group>"; };
+		531C4FD5295F77C50046CD66 /* AddViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddViewController.xib; sourceTree = "<group>"; };
+		531C4FD6295F77C50046CD66 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 		532880CC293FD695008EF20A /* ContactTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		532CE521293D8FAA003E4ABC /* ContactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		532CE524293D8FAA003E4ABC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 		531AB18429401EE4008C345D /* AddViewController */ = {
 			isa = PBXGroup;
 			children = (
-				531AB18C29402021008C345D /* AddViewController.swift */,
-				531AB18D29402021008C345D /* AddViewController.xib */,
+				531C4FD6295F77C50046CD66 /* AddViewController.swift */,
+				531C4FD5295F77C50046CD66 /* AddViewController.xib */,
 				532CE54D293DA336003E4ABC /* AddViewModel.swift */,
 			);
 			path = AddViewController;
@@ -295,7 +295,7 @@
 				53F39B89293EFB9200221AFB /* CTextfield.xib in Resources */,
 				532CE531293D8FAB003E4ABC /* Assets.xcassets in Resources */,
 				5317E058293DB0D700A32902 /* ContactTableViewCell.xib in Resources */,
-				531AB18F29402021008C345D /* AddViewController.xib in Resources */,
+				531C4FD7295F77C50046CD66 /* AddViewController.xib in Resources */,
 				532CE52C293D8FAA003E4ABC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,7 +309,7 @@
 			files = (
 				532CE52F293D8FAA003E4ABC /* ContactApp.xcdatamodeld in Sources */,
 				532CE529293D8FAA003E4ABC /* HomeViewController.swift in Sources */,
-				531AB18E29402021008C345D /* AddViewController.swift in Sources */,
+				531C4FD8295F77C50046CD66 /* AddViewController.swift in Sources */,
 				538FA75829401E53008A4F8B /* ContactDetailViewControllerViewModel.swift in Sources */,
 				532CE525293D8FAA003E4ABC /* AppDelegate.swift in Sources */,
 				531AB1962940329E008C345D /* HeaderViewModel.swift in Sources */,
