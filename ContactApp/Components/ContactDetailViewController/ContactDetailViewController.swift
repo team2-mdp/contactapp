@@ -39,7 +39,7 @@ class ContactDetailViewController: UIViewController {
         
         let headerViewModel = HeaderViewModel()
         headerView = HeaderView(viewModel: headerViewModel)
-        headerView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 230)
+        headerView.frame = CGRect(x: 0, y: 0, width: view.bounds.width, height: 200)
         headerView.imageView.isUserInteractionEnabled = true
         headerView.imageView.addGestureRecognizer(profileGesture)
         if let profile = viewModel.getProfile() {
