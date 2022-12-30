@@ -1,2 +1,8 @@
+# OS X
+.DS_Store
+
+ 
+
+## User settings
 ContactApp.xcodeproj/xcuserdata/*
 ContactApp.xcodeproj/project.xcworkspace/xcuserdata/*
