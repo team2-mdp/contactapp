@@ -9,7 +9,7 @@ workflows:
           set -e # exit on first failed command
 
           xcode-project run-tests \
-              --workspace ContactApp.xcodeproj \
+              --project ContactApp.xcodeproj \
               --scheme ContactApp \
               --device "iPhone 13"
         test_report: build/ios/test/*.xml
