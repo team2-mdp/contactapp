@@ -1,0 +1,15 @@
+workflows:
+  my-workflow:
+    instance_type: mac_pro
+    environment:
+      xcode: 12.5
+    scripts:
+      - name: Run iOS tests
+        script: |
+          set -e # exit on first failed command
+
+          xcode-project run-tests \
+              --workspace ContactApp.xcodeproj \
+              --scheme ContactApp \
+              --device "iPhone 12"
+        test_report: build/ios/test/*.xml
