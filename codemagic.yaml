@@ -1,6 +1,6 @@
 workflows:
   my-workflow:
-    instance_type: mac_pro
+    instance_type: mac_mini_m1
     environment:
       xcode: 12.5
     scripts:
