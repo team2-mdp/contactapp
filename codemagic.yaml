@@ -2,7 +2,7 @@ workflows:
   my-workflow:
     instance_type: mac_mini_m1
     environment:
-      xcode: 12.5
+      xcode: 14.0
     scripts:
       - name: Run iOS tests
         script: |
@@ -11,5 +11,5 @@ workflows:
           xcode-project run-tests \
               --workspace ContactApp.xcodeproj \
               --scheme ContactApp \
-              --device "iPhone 12"
+              --device "iPhone 13"
         test_report: build/ios/test/*.xml
